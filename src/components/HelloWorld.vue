@@ -28,6 +28,15 @@
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
   </div>
+
+ <el-button type="primary" style="margin-left: 16px" @click="drawer = true">
+    open
+  </el-button>
+
+  <el-drawer v-model="drawer" title="I am the title" :with-header="false">
+    <span>Hi there!</span>
+  </el-drawer>
+
 </template>
 
 <script>
